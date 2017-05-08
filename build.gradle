@@ -22,13 +22,13 @@ repositories {
 
 dependencies {
     compile 'org.springframework.boot:spring-boot-starter-web:1.5.3.RELEASE'
-    compile 'org.webjars:jquery:3.2.0'
+    compile 'org.webjars.npm:jquery:3.2.1'
     compile 'org.webjars:font-awesome:4.7.0'
     compile 'org.webjars.bower:angular:1.6.4'
     compile 'org.webjars.bower:angular-ui-router:1.0.0-rc.1'
     compile 'org.webjars.bower:angular-sanitize:1.6.4'
     compile 'org.webjars.bower:angular-motion:0.4.4'
-    compile 'org.webjars.npm:element-ui:1.3.1'
+    compile 'org.webjars:foundation:6.3.1'
     compile 'org.webjars.bower:angular-animate:1.6.4'
     compile 'org.projectlombok:lombok:1.16.16'
     testCompile 'org.mockito:mockito-core:2.+'
