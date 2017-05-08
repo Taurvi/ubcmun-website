@@ -14,7 +14,7 @@ A Java web project for University of British Colombia Model United Nations (UBCM
 
 **Framework:** AngularJS
 
-**CSS:** Element-UI
+**CSS:** Foundation
 
 **Fonts:** Font Awesome
 
