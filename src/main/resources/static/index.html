@@ -3,22 +3,27 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <base href="/">
         <title>UBCMUN - 2018</title>
-        <link rel="stylesheet" href="webjars/foundation/6.3.1/dist/css/foundation.min.css">
+        <link rel="stylesheet" href="http://fonts.googleapis.com/icon?family=Material+Icons"/>
+        <link rel="stylesheet" href="webjars/materialize/0.98.2/dist/css/materialize.min.css" media="screen,projection"/>
+        <link rel="stylesheet" href="webjars/font-awesome/4.7.0/css/font-awesome.min.css"/>
+        <link rel="stylesheet" href="assets/css/main.css"/>
     </head>
     <body ng-app="CoreModule">
         <div ui-view="nav"></div>
-        <div ui-view="content" class="container-fluid"></div>
+        <main ui-view="content"></main>
         <div ui-view="footer"></div>
+
         <!-- JS Libraries -->
         <script src="webjars/jquery/3.2.1/dist/jquery.min.js"></script>
         <script src="webjars/angular/1.6.4/angular.min.js"></script>
         <script src="webjars/angular-ui-router/1.0.0-rc.1/release/angular-ui-router.min.js"></script>
         <script src="webjars/angular-sanitize/1.6.4/angular-sanitize.min.js"></script>
         <script src="webjars/angular-animate/1.6.4/angular-animate.min.js"></script>
-        <script src="webjars/foundation/6.3.1/dist/js/foundation.min.js"></script>
+        <script src="webjars/materialize/0.98.2/dist/js/materialize.min.js"></script>
+        <script src="webjars/angular-materialize/0.2.2/src/angular-materialize.js"></script>
         <!-- Angular Components -->
         <script src="CoreModule.js"></script>
         <script src="modules/nav/NavModule.js"></script>

@@ -2,6 +2,7 @@
 
 var CoreModule = angular.module('CoreModule', [
     'ui.router',
+    'ui.materialize',
     'CoreModule.NavModule',
     'CoreModule.HomeModule',
     'CoreModule.FooterModule',
