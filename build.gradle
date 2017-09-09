@@ -1,3 +1,9 @@
+task webpack(type: Exec) {
+    inputs.file("package-lock.json")
+    inputs.file("$projectDir/webpack.config.js")
+    commandLine "$projectDir/node_modules/.bin/webpack"
+}
+
 buildscript {
     repositories {
         mavenCentral()
@@ -17,20 +23,23 @@ apply plugin: 'org.springframework.boot'
 sourceCompatibility = 1.8
 
 repositories {
+    jcenter()
     mavenCentral()
 }
 
 dependencies {
     compile 'org.springframework.boot:spring-boot-starter-web:1.5.3.RELEASE'
-    compile 'org.springframework.boot:spring-boot-starter-data-jpa'
+    compile 'org.springframework.boot:spring-boot-starter-data-jpa:1.5.3.RELEASE'
+    compile 'org.springframework.boot:spring-boot-starter-security:1.5.3.RELEASE'
+    compile 'org.springframework.boot:spring-boot-starter-thymeleaf:1.5.3.RELEASE'
     compile 'mysql:mysql-connector-java'
     compile 'org.webjars.npm:jquery:3.2.1'
     compile 'org.webjars:font-awesome:4.7.0'
-    compile 'org.webjars.bower:angular:1.6.4'
+    compile 'org.webjars.bower:angular:1.6.5'
     compile 'org.webjars.bower:angular-ui-router:1.0.0-rc.1'
-    compile 'org.webjars.bower:angular-sanitize:1.6.4'
+    compile 'org.webjars.bower:angular-sanitize:1.6.5'
     compile 'org.webjars.bower:angular-motion:0.4.4'
-    compile 'org.webjars.bower:angular-animate:1.6.4'
+    compile 'org.webjars.bower:angular-animate:1.6.5'
     compile 'org.webjars.bower:materialize:0.98.2'
     compile 'org.webjars.bower:angular-materialize:0.2.2'
     compile 'org.projectlombok:lombok:1.16.16'
@@ -38,8 +47,4 @@ dependencies {
     testCompile 'org.assertj:assertj-core:3.6.2'
     testCompile 'junit:junit:4.12'
     testCompile 'org.springframework:spring-test:4.3.7.RELEASE'
-    testCompile 'org.webjars.npm:jasmine-core:2.5.2'
-    testCompile 'org.webjars.npm:karma:1.7.0'
-    testCompile 'org.webjars.npm:karma-chrome-launcher:2.1.1'
-    testCompile 'org.webjars.npm:karma-jasmine:1.0.2'
 }

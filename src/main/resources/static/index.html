@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <base href="/">
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <base href="/"/>
         <title>UBCMUN - 2018</title>
         <link rel="stylesheet" href="http://fonts.googleapis.com/icon?family=Material+Icons"/>
         <link rel="stylesheet" href="webjars/materialize/0.98.2/dist/css/materialize.min.css" media="screen,projection"/>
@@ -13,15 +13,15 @@
     </head>
     <body ng-app="CoreModule">
         <div ui-view="nav"></div>
-        <main ui-view="content"></main>
+        <div ui-view="content"></div>
         <div ui-view="footer"></div>
 
         <!-- JS Libraries -->
         <script src="webjars/jquery/3.2.1/dist/jquery.min.js"></script>
-        <script src="webjars/angular/1.6.4/angular.min.js"></script>
+        <script src="webjars/angular/1.6.5/angular.min.js"></script>
         <script src="webjars/angular-ui-router/1.0.0-rc.1/release/angular-ui-router.min.js"></script>
-        <script src="webjars/angular-sanitize/1.6.4/angular-sanitize.min.js"></script>
-        <script src="webjars/angular-animate/1.6.4/angular-animate.min.js"></script>
+        <script src="webjars/angular-sanitize/1.6.5/angular-sanitize.min.js"></script>
+        <script src="webjars/angular-animate/1.6.5/angular-animate.min.js"></script>
         <script src="webjars/materialize/0.98.2/dist/js/materialize.min.js"></script>
         <script src="webjars/angular-materialize/0.2.2/src/angular-materialize.js"></script>
         <!-- Angular Components -->
@@ -29,5 +29,6 @@
         <script src="modules/nav/NavModule.js"></script>
         <script src="modules/home/HomeModule.js"></script>
         <script src="modules/footer/FooterModule.js"></script>
+        <script src="modules/login/LoginModule.js"></script>
     </body>
 </html>
