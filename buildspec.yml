@@ -1,0 +1,18 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - command
+      - command
+  pre_build:
+    commands:
+      - command
+      - command
+  build:
+    commands:
+      - sh gradlew build
+artifacts:
+  files:
+    - build/libs/ubcmun-1.0-SNAPSHOT.jar
+  discard-paths: yes
