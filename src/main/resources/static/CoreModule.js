@@ -6,7 +6,6 @@ var CoreModule = angular.module('CoreModule', [
     'CoreModule.NavModule',
     'CoreModule.HomeModule',
     'CoreModule.FooterModule',
-    'CoreModule.LoginModule',
 ]);
 
 CoreModule.config([
@@ -26,21 +25,12 @@ CoreModule.config([
                         controller: 'NavController'
                     },
                     'content': {
-                        templateUrl: 'modules/home/LoginView.html',
+                        templateUrl: 'modules/home/HomeView.html',
                         controller: 'HomeController'
                     },
                     'footer': {
                         templateUrl: 'modules/footer/FooterView.html',
                         controller: 'FooterController'
-                    }
-                }
-            })
-            .state('login', {
-                url: '/login',
-                views: {
-                    'content': {
-                        templateUrl: 'modules/login/LoginView.html',
-                        controller: 'LoginController'
                     }
                 }
             });
